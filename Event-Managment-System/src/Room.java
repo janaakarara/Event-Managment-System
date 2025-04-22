@@ -10,7 +10,7 @@ public class Room {
     private List<TimeSlot> timeSlots;
 
     // Inner class to represent a time slot
-    private static class TimeSlot {
+    public static class TimeSlot {
         private LocalTime startTime;
         private LocalTime endTime;
 
