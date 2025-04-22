@@ -25,6 +25,18 @@ public class Event {
         room.reserve(); // Reserve room when event is created
     }
 
+     public List<TimeSlot> getTimeSlots() {
+        return timeSlots;
+    }
+
+    public void addTimeSlot(LocalTime startTime, LocalTime endTime) {
+        timeSlots.add(new TimeSlot(startTime, endTime));
+    }
+
+    public void clearTimeSlots() {
+        timeSlots.clear();
+    }
+    
     // Getters and setters
     public String getTitle() {
         return title;
